@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+.heading h1 {
+    font-size: 64px;
+    background-color: #FF6347;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.heading h2 {
+    font-size: 32px;
+    background-color: #00EEEE;
+    margin-top: 0px;
+}
+.logo img {
+    height: 100px;
+    width: 200px;
+}
+.topnav {
+    overflow: hidden;
+    background-color:black;
+}
+
+.topnav a {
+    float:left;
+    display: block;
+    color: gold;
+    text-align: center;
+    padding: 10px 35px;
+    text-decoration: ivory;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.topnav-right a:visited {
+    color : red;
+}
+.topnav-right{
+    float: right;
+}
+.topnav a:hover {
+    background-color: red;
+    color : rebeccapurple;
+    font-size: 20px;
+}
+
+.topnav a img {
+    height: 50px;
+    width: 50px;
+}
+
+.welcome_image {
+    text-align: center;
+}
+
+.column1 {
+    float : left;
+    width : 50%;
+}
+.column1 h3 {
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    writing-mode: sideways-rl;
+}
+.column1 img {
+    background-color: white;
+    opacity: 1;
+}
+.column1 img:hover {
+    opacity : 0.5;
+}
+.column1 h3 span {
+    font-size: 56px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.row1 {
+    background-color: lightgrey;
+    margin-bottom: 20px;
+}
+.row1::after {
+    content: "";
+    display:table;
+    clear: both;
+    margin-bottom: 40px;
+}
+.row2::after {
+    content:"";
+    display:table;
+    clear: both;
+}
+.row2 {
+    background-color: thistle;
+}
+.column2 {
+    float:left;
+    background-color: skyblue;
+    border: 3px solid black;
+    height: 350px;
+}
+
+.left {
+    width:33.33%;
+    background-color: tan;
+
+}
+ .left2 {
+    width : 33.33%;
+ }
+ .right {
+     background-color: tan;
+     width:33.33%
+ }
+ .right ul {
+     list-style-type: square;
+ }
+
+ .columngif {
+     float:left;
+ }
+ .leftgif {
+     width : 25%;
+ }
+ .rightgif {
+     width : 75%;
+ }
+ .rightgif h3{
+    font-size: 40px;
+    font-family: cursive;
+    text-align: center;
+ }
+ .rightgif h3 span a {
+     color : red;
+     animation-name: PnR;
+     animation-duration: 5s;
+     animation-delay: 3s;
+     animation-iteration-count: 5;
+     animation-direction: alternate;
+     cursor: pointer;
+ }
+ .rightgif h3 span {
+    color : red;
+    animation-name: PnR;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: 5;
+    animation-direction: alternate;
+    cursor: pointer;
+ }
+
+ .rowgif:after {
+     content: "";
+     display : table;
+     clear: both;
+ }
+@keyframes PnR {
+    from {color : black;}
+    to {color : red;}
+    0% { visibility: hidden; }
+    25% {visibility: visible;}
+    35% {font-size: 10px;}
+}
+
+
+ footer {
+     font-size: 12px;
+    font-style: italic;
+    text-align: center;
+ }

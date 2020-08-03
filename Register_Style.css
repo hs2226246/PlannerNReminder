@@ -1,0 +1,126 @@
+* {
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background : #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container .form-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 60vw;
+    height: 80vh;
+    background: #fff;
+    box-shadow: 10px 10px 10px rgb(0,0,0,0.5);
+}
+
+
+
+.container .form-image {
+    position : absolute;
+    color: #fff;
+    right:0;
+    height : 100%;
+    width : 60%;
+    background: linear-gradient(rgba(235,0,255,0.7),rgba(17,166,223,0.7)),url('bg.jpg');
+    background-size: 400px 400px;
+    clip-path: polygon(0 0,100% 0,100% 100%,70% 100%);
+}
+.container .form-image .text h2 {font-size: 34px; margin-bottom: 20px;}
+.container .form-image .text p {font-size: 16px;}
+.container .form-image .text {
+    position: absolute;
+    right : 0;
+    padding : 30px;
+    text-align: right;
+}
+
+.form-group {
+   margin : 30px 60px;
+}
+.form-group .input-group {
+    width : 300px;
+    margin : 15px 0px;
+}
+.form-group .checkbox{
+    margin-top: 20px;
+}
+.form-group .checkbox label{
+    margin-right: 53px;
+}
+.form-group .radiobutton  label{
+    margin-right: 144px;
+}
+.form-group .dropdown {
+    margin-top : 20px;
+}
+
+
+
+
+
+
+
+
+.form-body .header {
+    margin : 0px 30px;
+}
+.form-body .header  a{
+    text-decoration: none;
+    color : rgb(233,0,255);
+}
+.form-body .header h2 { margin-bottom: 15px;}
+.form-body .header p {
+        font-size: 14px;
+}
+
+
+
+
+.form-group .input-group input[type = "password"],
+.form-group .input-group input[type = "text"] {
+    width : 90%;
+    padding : 8px 15px; 
+    outline : none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.form-group .input-group.right {
+    text-align: right;
+}
+.form-group .input-group button {
+    position: relative;
+    width : 100px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color : #fff;
+    background : rgb(235,0,255);
+    outline: none;
+    cursor: pointer;
+    z-index: 1;
+    overflow:hidden;
+}
+.form-group .input-group button::before {
+    content : "";
+    position: absolute;
+    height: 100%;
+    width : 100px;
+    border-radius: 5px;
+    background : linear-gradient(rgb(235,0,255),rgb(17,166,223));
+    left:-100px;
+    top :0;
+    transition: transform 0.5s;
+}
+.form-group .input-group button:hover::before {
+    transform: translateX(100px);
+    z-index: -1;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Planner And Reminder</title>
+        <meta charset="UTF-8">
+       <link rel = "stylesheet" type = "text/css" href="WhyPnR_Style.css" >
+       
+    </head>
+    <body>
+        <div class = "heading">
+            <h1>P<span>lanner</span> <span>a</span>N<span>d</span> R<span>eminder</span></h1>
+        </div>
+        <div class = "topnav">
+            <a href = "PnR.html">Home</a>
+        </div>
+        <div class = "rowVideo">
+            <div class = "columnVid left">
+                <h2>Importance of <br><span>Planning</span></h2>
+            </div>
+            <div class = "columnVid right">
+                <video height ="350" controls><source src = "D:\Semester 3 College\Web Technology Lab\PlanningVid.mp4" type ="video/mp4"> </video>
+            </div>
+        </div>
+        <hr>
+        <div class = "rowAudio">
+            <div class = "columnAud left1">
+                <audio controls>
+                    <source src = "D:\Semester 3 College\Web Technology Lab\PlanningSound.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class = "columnAud right1">
+                <h2><a id="Diff">Difference in </a><span id = "Plan">Planning!!!</span></h2>
+            </div>
+        </div>
+        <hr>
+        <div class  = "ReviewRow">
+    
+            <div class = "ReviewCol email">
+                <input type="text" placeholder="Enter email">
+            </div>
+            <div class = "ReviewCol review1">
+                <label for = "review1" style="color: aliceblue; font-size: 20px;">Review for PnR</label><br>
+                <textarea id = "review1" name = "review1" rows = "6" cols = "50"></textarea>
+                
+            </div>
+            <a class = "format" href = "ExternalDTD.xml" target = "_blank" style="color: black; font-size: 15px;">Format for Review</a>
+        </div><hr>
+        <div class = "GeoLocation">
+            <div class = "columnGeo left2">
+                <h2>For Home Assistance</h2>
+                <p>Click on the button for sharing your location</p>
+                <button onclick="getLocation()">Location</button>
+                <br>
+                <p id = "location"></p>
+            </div>
+        </div>
+        <script>
+            var x = document.getElementById("location");
+            function getLocation() {
+                if(navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(showPosition);
+                }
+                else {
+                    x.innerHTML = "Geolocation is not supported by this browser";
+                }
+            }
+            function showPosition(position) {
+                x.innerHTML = "Latitude: "+position.coords.latitude + "<br>Longitude: "+position.coords.longitude + "<br>Thank You !!!Further details will be shared shortly";
+            }
+        </script>
+    </body>

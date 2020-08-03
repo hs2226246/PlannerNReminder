@@ -1,0 +1,231 @@
+* {
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+}
+.heading {
+    font-size: 40px;
+    text-align: center;
+    font-family : cursive;
+    box-shadow : 3px 3px 3px rgb(0,0,0,0.5);
+    background-color: yellow;
+    color : black;
+}
+.heading span {
+    font-size: 20px;
+    animation-name: test;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes test {
+    0% {font-size: 20px;}
+    50% {font-size: 0px;}
+    100% {font-size: 20px;}
+}
+
+.topnav {
+    overflow: hidden;
+    height: 30px;
+    box-shadow: 2px 2px 2px rgb(0,0,0,0.5);
+    margin-top: 10px;
+    background-color: black;
+}
+.topnav a {
+    float: left;
+    display: block;
+    color : white;
+    padding : 10px 35px;
+    text-decoration: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.topnav a:hover {
+    color : lightseagreen;
+    font-size: 15px;
+}
+
+
+
+
+.rowVideo {
+    background-color:linear-gradient(#fdfcfb,#e2d1c3);
+}
+.columnVid {
+    float:left;
+    height: 350px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom : 20px;
+}
+.left {
+    width: 33%;
+    background: linear-gradient(rgba(235,0,255,0.4),rgba(17,166,223,0.4)),url('bg.jpg');
+    clip-path: polygon(0% 0,75% 0%,100% 50%,75% 100%,0 100%);
+   
+}
+.left h2 {
+    font-size: 30px;
+    padding :50px 0px;
+    color: white;
+    font-family: sans-serif;
+}
+.left h2 span{
+    font-size: 50px;
+    padding-top: 10px;
+}
+.right {
+    width : 67%;
+    height:350px;
+    border: 1px;
+    box-shadow: 4px 4px 4px rgb(0,0,0,0.5);
+}
+.right video {
+    width : 100%
+}
+.rowVideo::after {
+    display: table;
+}
+
+
+
+.rowAudio {
+    background-color: yellow;
+}
+.columnAud {
+    float:left;
+    height: 350px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom : 20px;
+}
+.rowAudio::after {
+    content : "";
+    display: table;
+}
+.left1 {
+    width : 33%;
+    background : linear-gradient(#bdc3c7,#2c3e50);
+}
+.left1 audio {
+    vertical-align: middle;
+    margin-top: 150px;
+}
+.right1 {
+    width :67%;
+    background: black;
+}
+.right1 h2 {
+    font-size: 50px;
+    margin-top: 150px;
+    color: white;
+    font-family: sans-serif;
+}
+#Diff {
+    animation : Diff;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+@keyframes Diff {
+    0% {font-size: 80px;}
+    50% {font-size: 10px;}
+    100% {font-size: 50px;}
+}
+#Plan {
+    animation : Plan;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+@keyframes Plan {
+    0% {font-size: 10px; color : white;}
+    50% {font-size: 80px; color : blue;}
+    100% {font-size: 50px; color : red;}
+}
+
+.ReviewRow {    
+    text-align: center;
+    margin-bottom: 20px;
+    background: linear-gradient(rgba(235,0,255,0.4),rgba(17,166,223,0.4)),url('bg.jpg');
+
+}
+.ReviewCol {
+    float:left;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom : 20px;
+    display: inline-block;
+}
+.ReviewRow::after {
+    content : "";
+    display: table;
+}
+.email {
+    width : 33%;
+}
+.email input {
+    width : 90%;
+    padding : 8px 15px; 
+    outline : none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.review1 {
+    width :67%;
+}
+
+
+
+.GeoLocation {
+    text-align: center;
+    background : linear-gradient(#614385,#516395);
+    color: white;
+    margin-top: 50px;
+}
+.GeoLocation p {
+    color:black
+}
+.GeoLocation button {
+    position: relative;
+    width : 100px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color : #fff;
+    background : rgb(235,0,255);
+    outline: none;
+    cursor: pointer;
+    z-index: 1;
+    overflow:hidden;
+}
+.GeoLocation button::before {
+    content : "";
+    position: absolute;
+    height: 100%;
+    width : 100px;
+    border-radius: 5px;
+    background : linear-gradient(rgb(235,0,255),rgb(17,166,223));
+    left:-100px;
+    top :0;
+    transition: transform 0.5s;
+}
+.GeoLocation button:hover::before {
+    transform: translateX(100px);
+    z-index: -1;
+}
+#location {
+    color: darkblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>CIA-1 Resume</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form>
+            <label>  
+                Studies[Form input type 1]: Press any character<br />  
+                <input type="text" id="Degrees" list="Deg">  
+                <datalist id="Deg">  
+                <option value="10th">
+                <option value="12th">
+                <option value="Bsc -CME">
+                <option value="MCS Computer Science">
+                <option value = "Internship @ Reflections in Vacations">
+                <option value = "Job Experience : 1 year">  
+                </datalist>  
+                <input type = "reset">
+                <label>Form input type 2</label>
+               </label>  
+               <hr>
+        </form>
+        <form oninput="(result.value=parseInt(a.value)+parseInt(b.value)/2)">
+            <label>Marks in 10th</label><br>
+            <input type="range" id="b" name="b" value="50" /> +<br>
+            <label>Marks in 12th</label><br>
+            <input type="number" id="a" name="a" value="10" /> =<br>
+            <label>Percentage [Form Attribute 3 ]</label><br>
+            <output name="result" for="a b">60</output>
+            <input type = "reset"><br><hr>
+            <label for="file">Age : [ Form input type 4]</label><br>
+            <progress id="file" value="23" max="80">23</progress>
+            <hr>
+            <label>[Form input type 5]</label><br>
+            <label for="disk_c">Programming Skills : </label>
+            <meter id="disk_c" value="8" min="0" max="10">8 out of 10</meter><br>
+            <label for="disk_c">Android  : </label>
+            <meter id="disk_c" value="6" min="0" max="10">6 out of 10</meter><br>
+            <label for="disk_c">Communication Skills : </label>
+            <meter id="disk_c" value="9" min="0" max="10">9 out of 10</meter><br>
+          </form>
+          <hr>
+          <label>AUDIO</label> <br>
+          <audio controls>
+            <source src="Resume_requirement.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio><br>
+          <hr>
+          <label>VIDEO</label><br>
+          <video width="320" height="240" controls>
+            <source src="Resume_requirement.mp3" type="video/mp4">
+            Your browser does not support the video tag.
+          </video><br>
+          <hr>
+          <h3>The embed element</h3><br>
+          <embed type="text/html" src="PnR.html" width="500" height="200">
+        <br>
+        <hr>
+        <label>OBJECT</label><br>
+        <object data="Profile_Pic.jpg" width="300" height="400"></object>
+        <hr>
+        <label>CANVAS</label><br>
+        <canvas id="myCanvas" width="620" height="100" style="border:1px solid #000000;">
+        </canvas>
+        <script>
+           var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+           ctx.font = "30px Arial";
+            ctx.strokeText("email : himanshu.singh@cs.christuniversity.in", 10, 50);
+            </script>
+        <table style="border:2px solid black">
+            <caption>Details</caption>
+            <thead style="border:2px solid black">
+                <tr>
+                    <th scope = "col">#</th>
+                    <th scope = "col">Degree</th>
+                    <th scope = "col">Marks Awarded</th>
+                </tr>
+            </thead>
+            <tbody style="border:2px solid black">
+                <tr>
+                    <th scope = "row">1</th>
+                    <td>10</td>
+                    <td>90%</td>
+                </tr>
+                <tr>
+                    <th scope = "row">2</th>
+                    <td>12</td>
+                    <td>80%</td>
+                </tr>
+                <tr>
+                    <th scope = "row">3</th>
+                    <td>B.sc</td>
+                    <td>78%</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class =  "imagemap">
+            <img src = "image_map.png" usemap = "#workmap" height = "100px">
+            <map name = "workmap">
+            <area shape = "rect" coords = "10,10,50,50" href = "https://www.facebook.com/">
+            <area shape = "rect" coords = "70,10,90,50" href = "https://www.instagram.com">
+            </map>
+        </div>
+    </body>

@@ -1,0 +1,44 @@
+<?xml version = "1.0" standalone="yes"?>
+<!DOCTYPE document [ 
+<!ELEMENT document (Registered_Data_Format)*>
+<!ELEMENT Registered_Data_Format (name,email,password,gender,country,category) >
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT password (#PCDATA)>
+<!ELEMENT gender (#PCDATA)>
+<!ELEMENT country (#PCDATA)>
+<!ELEMENT category (#PCDATA)>
+] >
+<document>
+  <title>This Page Shows the registeration format</title>
+  <title>Password will be random and not connected whatever to any email</title>
+
+  <Registered_Data_Format>
+        <title>User Id #11</title>
+        <name>Rea</name>
+        <email>email :Rea@PnR.com</email>
+        <password>RWEW123.</password>
+        <gender>Gender : F</gender>
+        <country> Country : US </country>
+        <category>Category : Daily User </category>
+  </Registered_Data_Format>
+    <Registered_Data_Format>
+        <title>User Id #12</title>
+        <name>Shyam</name>
+        <email>email :Shyam.R@PnR.com</email>
+        <password>RWEW123.</password>
+        <gender>Gender : M</gender>
+        <country> Country : INDIA </country>
+        <category>Category : Doctor</category>
+  </Registered_Data_Format>
+  <Registered_Data_Format>
+        <title>User Id #13</title>
+        <name>Raghav</name>
+        <email>email :Raghav@PnR.com</email>
+        <password>RWEW123.</password>
+        <gender>Gender : M</gender>
+        <country> Country : INDIA </country>
+        <category>CAtegory : Stylist </category>
+  </Registered_Data_Format>
+
+  </document>
